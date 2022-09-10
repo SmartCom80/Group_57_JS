@@ -1,3 +1,47 @@
+const user = {
+  email: "mango@mail.com",
+  age: 20,
+  location: { lat: 10, lon: 20 },
+};
+
+// const {username} = user;
+// console.log('username :>> ', username);
+
+// const {username ="User"} = user;
+// console.log('username :>> ', username);
+
+// const { email: userEmail } = user;
+// console.log("email :>> ", email);
+
+// const {
+//   location: { lat, lon },
+// } = user;
+// console.log("lat, lon :>> ", lat, lon);
+
+// function foo({ username } = {}) {
+//   console.log("username :>> ", username);
+// }
+
+// foo();
+
+// const profile = {
+// 	username: "Mango",
+// 	age: 20,
+// };
+// const profileUpdate = {
+// 	username: "Poly",
+// };
+// const updateProfile = {
+// 	...profile,
+// 	...profileUpdate
+// };
+// console.log('updateProfile :>> ', updateProfile);
+
+// const firstObject = { A: 1, B: 2 };
+// const secondObject = { A: 3, B: 4 };
+// const thirdObject = {A: 5, ...firstObject, ...secondObject, C: 6};
+// console.log('thirdObject :>> ', thirdObject);
+
 // const user = {
 //     email: 'email@vvv.vv',
 
@@ -15,7 +59,6 @@
 
 // a.email = 'myTest@g.m'
 // console.log(user);
-
 
 // const obj = {
 //     key : "value",
@@ -39,7 +82,6 @@
 // console.log(obj.test['name']);
 // console.log(obj['test'].name);
 
-
 // const obj = {
 //     key: "value",
 //     test: {
@@ -49,8 +91,6 @@
 
 // obj.name = 'David'
 // console.log(obj);
-
-
 
 // const obj = {
 //     key: "value",
@@ -64,7 +104,6 @@
 // console.log(obj);
 // console.log(obj.age); => undefined
 
-
 // const name = 'Artem';
 // const age = 27;
 
@@ -72,7 +111,6 @@
 //     name: name,
 //     age: age
 // }
-
 
 // // console.log(user);
 // const user = {
@@ -93,7 +131,6 @@
 // console.log(user);
 // console.log(window.name); === ''
 
-
 // function calculateTotalPrice(order) {
 //     let total = 0;
 // i < order.length аналогічно умові в циклі
@@ -113,7 +150,6 @@
 // calculateTotalPrice([164, 48, 291]);
 // calculateTotalPrice([412, 371, 94, 63, 176]);
 
-
 // const obj = {
 //     key : "value",
 //     test : {
@@ -132,10 +168,6 @@
 // test.key = 'aaaa'
 // console.log(test);
 // console.log(test.key);
-
-
-
-
 
 // Example 1 - Основи об'єктів
 // Напиши скрипт, який для об'єкта user послідовно:
@@ -162,7 +194,6 @@
 // }
 //----------------------------------------//
 
-
 // Example 2 - метод Object.values()
 // Є об'єкт, де зберігаються зарплати нашої команди. Напишіть код для підсумовування всіх зарплат та збережіть результат у змінній sum. Повинно вийти 390. Якщо об'єкт salaries порожній, результат має бути 0.
 
@@ -180,7 +211,6 @@
 //     console.log(value);
 // }
 // console.log(sum);
-
 
 // Example 3 - Масив об'єктів
 // Напишіть ф-цію calcTotalPrice(stones, stoneName), яка приймає масив об'єктів та рядок з назвою каменю. Ф-ція рахує і повертає загальну вартість каміння з таким ім'ям, ціною та кількістю з об'єкта
@@ -221,7 +251,6 @@
 // Example 4 - Комплексні завдання
 // Напиши скрипт управління особистим кабінетом інтернет-банку. Є об'єкт account, в якому необхідно реалізувати методи для роботи з балансом та історією транзакцій.
 
-
 /*
  * Типів транзакцій лише два.
  * Можна покласти чи зняти гроші з рахунку.
@@ -230,7 +259,6 @@
 //     DEPOSIT: 'deposit',
 //     WITHDRAW: 'withdraw',
 // };
-
 
 // /*
 //  * Кожна транзакція це об'єкт із властивостями: id, type та amount
@@ -340,21 +368,7 @@
 
 // console.log(Date.now().toString(36));
 
-
-
-
-
-
-
-
 // -------------------------------Part 2-----------------------------------------//
-
-
-
-
-
-
-
 
 // Розглянути rest в якості параметру замість псевдомасиву arguments
 
@@ -364,11 +378,6 @@
 //     console.log(args);
 // }
 // foo(1, 2, 3, 4, 5)
-
-
-
-
-
 
 // Розглянути spread для перетворення з псевдомасиву в масив
 
@@ -381,10 +390,6 @@
 // console.log('rest', qwe);
 // }
 // foo(1, 2, 3, 4, 5)
-
-
-
-
 
 //  Task 1 (Деструктуризація)
 // Перепиши функцію так щоб вона приймала один об'єкт параметрів замість набору незалежних аргументів.
@@ -407,13 +412,6 @@
 //     height: '1.95'
 // }));
 
-
-
-
-
-
-
-
 //  Task 2 (Деструктуризація)
 // Перепиши функцію так щоб вона приймала один об'єкт параметрів замість набору незалежних аргументів.
 
@@ -430,16 +428,6 @@
 //     phones: '89001234567,89001112233,890055566377,890055566300'
 // });
 
-
-
-
-
-
-
-
-
-
-
 //  Task 3 (Глибока деструктуризація)
 // Перепиши функцію так щоб вона приймала один об'єкт параметрів замість набору незалежних аргументів.
 
@@ -454,17 +442,6 @@
 //         defenceBots:  50,
 //     }
 // }));
-
-
-
-
-
-
-
-
-
-
-
 
 // Task 4 (Деструктуризація)
 // Напишу функцію щоб вона приймала об'єкт параметрів із властивостями companyName і stock і виводила репорт про кількість товарів на складі будь-якої компанії.
@@ -503,16 +480,6 @@
 //     }),
 // ); // "Belacci has 35 item in stock"
 
-
-
-
-
-
-
-
-
-
-
 // Task 5 (spread)
 // Доповни функцію createContact(partialContact) так, щоб вона повертала новий об'єкт контакту з доданою властивістю id, а також list зі значенням "default" якщо у partialContact немає такої властивості.
 
@@ -544,18 +511,8 @@
 //     return '_' + Math.random().toString(36).substr(2, 9);
 // }
 
-
-
-
-
-
-
-
-
-
 // Task 6 (rest)
 // Напиши функцію transformUsername(user) так, щоб вона повертала новий об'єкт із властивістю fullName, замість firstName та lastName.
-
 
 // function transformUsername({firstName, lastName, ...qwe}) {
 //     const {
@@ -593,17 +550,6 @@
 //     }),
 // );
 
-
-
-
-
-
-
-
-
-
-
-
 // const user1 = {
 //     id: 1,
 //     firstName: 'Jacob',
@@ -624,7 +570,6 @@
 //     friendCount: 20,
 // }
 // const arr = [user1, user2]//
-
 
 // function foo(arr) {
 //     for (const user of arr) {
@@ -653,7 +598,6 @@
 //     return arr
 // }
 
-
 // console.log(foo(arr));
 // console.log('user1',user1);
 // console.log('user2',user2);
@@ -665,10 +609,8 @@
 //     age: 22
 // }
 
-
 // const {email : emailUser} = user
 // console.log(email);
-
 
 // function foo ({userName} ={}){
 //     console.log(userName);
@@ -676,16 +618,11 @@
 
 // foo()
 
-
-
 // const arr1 = [1, 2, 3, 4]
 // const arr2 = [...arr1]
 // const arr3 = arr1
 
 // console.log(arr1 === arr3);
-
-
-
 
 // function foo ({a,b,c, ...props}){
 //     console.log(props);
@@ -693,8 +630,7 @@
 
 // foo({a:1,b:2,c:3,d:4,e:5})
 
-
-// с конспекта. если было изменено имя переменной и ее значение, почему при вызове firstCoverImage получаем //images-na.ssl-images-amazon.com/images/I/51b5YG6Y1rL.jpg а не "https://via.placeholder.com/640/480"     
+// с конспекта. если было изменено имя переменной и ее значение, почему при вызове firstCoverImage получаем //images-na.ssl-images-amazon.com/images/I/51b5YG6Y1rL.jpg а не "https://via.placeholder.com/640/480"
 // const firstBook = {
 //     title: "The Last Kingdom",
 //     coverImage: "https://images-na.ssl-images-amazon.com/images/I/51b5YG6Y1rL.jpg",
@@ -707,7 +643,6 @@
 
 // console.log(firstTitle); // The Last Kingdom
 // console.log(firstCoverImage); // https://images-na.ssl-images-amazon.com/images/I/51b5YG6Y1rL.jpg
-
 
 // function foo({
 //     name,
@@ -725,13 +660,11 @@
 //     height: 195
 // })
 
-
 // function foo(a, b) {
 //     console.log(a + b);
 //     return a + b
 // }
 // const result = foo(1, 2)
-
 
 // console.log(foo(1, 2));
 // console.log(result + 5);
